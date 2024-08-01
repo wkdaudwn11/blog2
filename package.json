@@ -1,5 +1,5 @@
 {
-  "name": "mj-next-app",
+  "name": "blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,11 +11,15 @@
     "outdated": "yarn install && yarn outdated"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "classnames": "^2.5.1",
     "env-cmd": "^10.1.0",
     "next": "14.2.5",
+    "notion-client": "^6.16.0",
+    "qs": "^6.12.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-notion-x": "^6.16.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -33,7 +37,6 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-typescript-sort-keys": "^3.2.0",
-    "husky": "^9.1.4",
     "lint-staged": "^15.2.7",
     "postcss": "^8",
     "prettier": "^3.3.3",
