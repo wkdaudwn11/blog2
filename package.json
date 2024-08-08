@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "outdated": "yarn install && yarn outdated"
+    "postinstall": "husky install",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache ."
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
@@ -37,6 +37,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-typescript-sort-keys": "^3.2.0",
+    "husky": "^9.1.4",
     "lint-staged": "^15.2.7",
     "postcss": "^8",
     "prettier": "^3.3.3",
